@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="about-img.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">FAMES'S RENT HUB</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Book Your Car Now</h1>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="car">Select a Car:</label>
+            <select id="car" name="car">
+                <option value="">-- Choose a Car --</option>
+                <option value="Toyota Camry">Toyota Camry</option>
+                <option value="Honda Civic">Honda Civic</option>
+                <option value="Ford Mustang">Ford Mustang</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="lamborghini urus">Lamborghini Urus</option>
+                <option value="Benz GLE">Benz GLE</option>
+                <option value="Ferrari Convertible">Ferrari Convertible</option>
+                <option value="Jeep Wrangler">Jeep Wrangler</option>
+                <option value="Honda accord">Honda Accord</option>
+            </select>
+
+            <label for="pickup">Pick-Up Date:</label>
+            <input type="date" id="pickup" name="pickup">
+
+            <label for="return">Return Date:</label>
+            <input type="date" id="return" name="return">
+
+            <div class="error" id="errorMessage" style="display: none;"></div>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
